@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'RobotoR';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoL';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoB';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoBo';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoTh';
+    src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-image: url("../imagenes/fondo4.jpg");
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+nav {
+    background-image: url("../imagenes/fondo3.jpg");
+    background-attachment: fixed;
+    font-family: 'RobotoBo';
+    font-size: 100%;
+    border: gray 10px solid;
+    position: fixed;
+    float: left;
+    width: 15%;
+    max-width: 280px;
+    text-align: left;
+    display: inline;
+}
+
+nav ul {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+section {
+    background-image: url("../imagenes/fondo3.jpg");
+    background-attachment: fixed;
+    border: gray 10px solid;
+    margin-left: 20%;
+}
+
+section main h1 {
+    border-left: none;
+    border-top: blue 8px solid;
+    border-right: none;
+    border-bottom: blue 8px dotted;
+    font-size: 200%;
+    color: blue;
+    text-align: center;
+}
+
+main div {
+    column-count: 2;
+}
+
+article {
+    margin-top: 0px;
+    margin-left: 7%;
+    margin-bottom: 20%;
+}
+
+article img {
+    margin-right: 10%;
+}
+
+header h1 {
+    color: yellow;
+    border: silver 27px solid;
+    border-image-source: url("../imagenes/borde1.png");
+    border-image-slice: 27;
+}
+
+h1 {
+    border: gray 10px solid;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'RobotoBo';
+}
+
+h2 {
+    border-bottom: red 5px solid;
+    font-size: 150%;
+    font-family: 'RobotoL';
+}
+
+p {
+    font-family: 'RobotoR';
+    column-count: 2;
+    margin-top: 1%;
+    font-size: 100%;
+}
+
+footer {
+    margin-top: 0.2%;
+    text-align: center;
+    font-family: 'RobotoTh';
+    font-size: 100%;
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    border: silver 30px solid;
+    border-image-source: url("../imagenes/borde2.png");
+    border-image-slice: 70;
+    border-image-repeat: round;
+}
+
+span a {
+    padding-top: 40%;
+    font-size: 240%;
+}
+
+#contenedor {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+}
+
+@media (max-width: 767px) {
+
+    nav {
+        max-width: 715px;
+        width: 0%;
+        height: 0%;
+        margin: 0% 0% 0% 0%;
+        float: none;
+        position: static;
+    }
+
+    #menu  {
+        column-count: 1;
+        border: gray 10px solid;
+        background-image: url("../imagenes/fondo2.jpg");
+    }
+
+    p{
+        column-count: 1;
+    }
+
+    section {
+        margin-left: 0%;
+    }
+
+    article img { 
+        float: left;
+    }
+
+    section div {
+        column-count: 1;
+    }
+
+    article {
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+   
+    nav {
+        max-width: 715px;
+        width: 0%;
+        height: 0%;
+        margin: 0% 0% 0% 0%;
+        float: none;
+        position: static;
+    }
+
+    #menu  {
+        column-count: 1;
+        font-size: 150%;
+        border: gray 10px solid;
+        background-image: url("../imagenes/fondo2.jpg");
+    }
+    
+    ul {
+        column-count: 2;
+    }
+
+    ul li a{
+        column-count: 0;
+        display: inline;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    section {
+        margin-left: 0%;
+    }
+
+    article img { 
+        float: left;
+    }
+
+    section div {
+        column-count: 1;
+    }
+
+    article {
+        margin-bottom: 5%;
+    }
+}
